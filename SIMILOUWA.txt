@@ -1,0 +1,61 @@
+Question 1;What is Git,and what problem does it solve in the context of software development?
+Git is a version of control system that allows developer to track changes made to their code over time.
+It is generally used for source code during software development,the version control system is for tracking changes in computer files.
+
+
+it solve the problems in software development by;
+-it is used to handle small and large project efficiently 
+-it used to track changes in the source code
+-it enables mutriple developer to work together ona linear development
+-it serve as backup for codebases and allows it documentations to function
+
+Question 2;Explain the difference between Git and GitHub
+Github is a web based hosting service for Git repositories,it allow developer to store their Git repositories.
+Git is a version contorl system used to track changes to a codebase 
+Github is used to manage and track these repositories
+Git is used to create repositories,track,changes,merge code and more
+Github operates over the web 
+Git operates locally on a developer machine
+Github follow a specific pricing model
+Git is an open source platfrom free to use,modify,and distribute
+
+
+
+Question 3;Describe the basic workflow for using Git for version control
+Git work flow enables developers to make changes directly to the main branch\master branch
+THE FOLLOWING ARE THE STEPS USED IN DESCRIBING THE WORK FLOW USING THE GIT VERSION CONTROL;
+STEP1;Install Git on your local machine and start up to gitbash
+STEP2;Creat a new repository and then initialize by making use of the command "git init"
+STEP3.Add file to the repository by making use of the command "git add ."
+STEP4;Commit the changes by making use of the command "git commit -m your message"
+STEP5;Check the stauts of your repository by makimg use of the command "git status" this to check your changes have been fixed in
+STEP6;Creat a branch by making use of the command "git branch"
+STEP7;Move the changes into master or main branch
+STEP8;You can now push to your remote repository by making use of the command "git push origin branch name"
+
+All these steps are important but anyine can be skipped depending on your repository
+
+
+Question 4;What is a Git repository?How does it store and manage versions of file
+Git repository is a data structure used by VCS to store metadata for set of files and directories 
+it contains all the collections of files as well as the history of changes made on the files
+
+a repository store and manage versions of files within a project by enabling developers to track changes and easily revert to the previous version if needed
+It stores files depending on their file type,stores files based on their content addressable storage model.
+
+
+
+Question 5;What is commit in Git?What information does a commit include?
+A Commit include modifications to tracked files the ones that have been added with git. It is a shortcut command that immediately creates a commit with a passed commi messages
+"git commit -m "commit message" "
+
+
+
+Question 6;Explain the concept of branching in Git.How can branching be useful in collaborative development?
+Branching is an important aspect in Git,it allow developer to create mutiple branches and work on them then merge them back to main branch
+It is a set of rule that teams follows while wririting,merging and depolying their code using a version control tool.
+Branching in Git allows developers to work on separate path of development within a repository
+
+
+
+
