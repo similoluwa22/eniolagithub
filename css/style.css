@@ -1,138 +1,296 @@
-body{
-font: 15px/1.5 Helvetical,sans-serif;
-padding: 0;
-margin: 0;
-background-color: #f4f4f4;
-}
-/*"global"*/
-.container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-ul{
-    margin:0;
-    padding:0;
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form {
+  margin: 0;
+  padding: 0;
 }
 
-.button_1{
-    height:38px;
-    background:#e8491d;
-    border:0;
-    padding-left:20px;
-    padding-right:20px;
-    color:#ffffff;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background: #f4f4f4;
 }
 
-/*"header"*/
-header{
-    background: #35424a;
-    color: #f6f6f6 ;
-    padding-top:20px;
-    min-height:70px;
-    border-bottom:#e8491d 3px solid;
+/* Global styles */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
 
-header a{
-    color:#ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-header ul{
-    margin: 0;
-    padding: 0;
-
+/* Header styles */
+header {
+  background: #35424a;
+  color: #f4f4f4;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
 }
 
-header li{
-    /* float:right;  */
-    display: inline;
-    padding: 0 20px 0 20px; 
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 
- header #branding{
-    float:left;
-    /* margin-top: 10px; */
- } 
-
- header
-    .higjhtlight,header .current a{
-        color :#e8491d;
-        font-weight :bold;
-    }
-
-    header a:hover{
-        color:#666666;
-        font-weight:bold;
-    }
-
-
-/*showcase*/
-#showcase{
-    min-height: 400px;
-    background:url('../images/hero.jpeg') no-repeat 0 -400px;
-    text-align: center;   
-    color: #ffffff;
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
 }
 
-#showacase h1{
-  margin-top:100px;
-  font-size:55px;
-  margin-bottom:10px;
+header #branding {
+  float: left;
 }
 
-#showcase p{
-    font-size:20px;
+header #branding h1 {
+  margin: 0;
 }
 
-/*Newsletter*/
-#newsletter{
-    padding:15px;
-    color: #ffffff;
-    background:35424a;
+header nav {
+  float: right;
+  margin-top: 10px;
 }
 
-#newsletter h1{
-    float:left;
+header .highlight,
+header .current a {
+  color: #e8491d;
+  font-weight: bold;
 }
 
-#newsletter form{
-    float:right;
-    margin:15px;
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
 }
 
-#newsletter input[type="email"]{
-    padding:4px;
-    height:25px;
-    width:250px;
+.button_1 {
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
 }
 
-/*Boxes*/
-#boxes{
-    margin-top:20px;
+/* Showcase styles */
+#showcase {
+  min-height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+    url("web.jpg") no-repeat;
+  /* Removed opacity for better readability */
+  background-color: rgba(53, 66, 74, 0.7); /* Added background color overlay */
+  text-align: center;
+  color: #ffffff;
+  padding: 50px 0;
 }
 
-#boxes .box{
- float:left;
- width:30%;
- padding:10px;
- 
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  color: #e8491d;
 }
 
-#boxes .box image{
-    width:90px;
-
+#showcase p {
+  font-size: 20px;
 }
 
-footer{
-    padding:20px;
-    margin-top:20px;
-    color:#ffffff;
-    background:#e8491d;
-    text-align:center;
-    
+/* Newsletter styles */
+#newsletter {
+  padding: 30px;
+  color: white;
+  background-color: #35424a;
 }
 
+#newsletter h1 {
+  float: left;
+  margin-top: 15px;
+}
 
+#newsletter form {
+  float: right; /* Adjusted alignment to be on the same horizontal line */
+  margin-top: 15px; /* Adjusted the margin for better alignment */
+}
+
+#newsletter input[type="email"] {
+  padding: 4px;
+  height: 27px;
+  width: 250px;
+}
+
+/* Boxes styles */
+#boxes {
+  margin-top: 50px;
+}
+
+#boxes .box {
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out; /* Added hover transition */
+}
+
+.box:hover {
+  background-color: #f4f4f4; /* Change background color on hover */
+}
+
+.box img {
+  max-width: 100px;
+}
+
+/* side bar */
+#sidebar {
+  background: #f4f4f4;
+  float: right;
+  width: 30%;
+  margin-top: 60px;
+}
+
+/* main-col */
+#main-col {
+  float: left;
+  width: 60%;
+  background: #f4f4f4;
+  margin-right: 10px;
+}
+
+/* Add space around the content */
+#main {
+  padding: 20px; /* Adjust the padding as needed for spacing around content */
+}
+
+/* Footer styles */
+footer {
+  background-color: #35424a; /* Change this color to your preferred background color */
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 20px;
+}
+
+/* Service Page Styles */
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.service {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.service h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+/* Add this CSS to your style.css file */
+
+/* Service Page Styles */
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.service {
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.service h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+/* Contact Form Styles */
+aside#sidebar {
+  width: 30%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #e8491d;
+  border: 1px solid #e5e5e5;
+}
+
+section#testimonials {
+  /* background-color: #e8491d; */
+}
+
+#contact-form {
+  width: 100%;
+}
+
+#contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  color: #333333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #e8491d;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #cc4216;
+}
