@@ -89,7 +89,7 @@ header a:hover {
 #showcase {
   min-height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
-    url("web.jpg") no-repeat;
+    url("./images/hero.jpeg") no-repeat;
   /* Removed opacity for better readability */
   background-color: rgba(53, 66, 74, 0.7); /* Added background color overlay */
   text-align: center;
